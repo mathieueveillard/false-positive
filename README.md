@@ -1,4 +1,4 @@
-# js-kata-starter
+# false-positive
 
 Starter project for kata (Node, TypeScript, Jest)
 
