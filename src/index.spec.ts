@@ -1,12 +1,12 @@
-// @ts-ignore see https://github.com/jest-community/jest-extended#setup
-import * as matchers from "jest-extended";
+const max = (a: number, b: number): number => {
+  if (a < b) {
+    return a;
+  }
+  return b;
+};
 
-expect.extend(matchers);
-
-test("That's a test!", () => {
-  expect(1 + 1).toEqual(2);
+test("should return the higher of two numbers", () => {
+  expect(Math.max(1, 2)).toEqual(2);
 });
 
-test("jest-extended is included", () => {
-  expect([1, 0]).toIncludeSameMembers([0, 1]);
-});
+export default max;
